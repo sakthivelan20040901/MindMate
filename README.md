@@ -69,6 +69,91 @@ Features:
 * Personalized AI Generation
 
 ---
+# 🤖 Why Amazon Bedrock?
+
+MindMate was designed to demonstrate practical AWS Generative AI development using **Amazon Bedrock**.
+
+Instead of selecting a model based only on popularity, multiple Large Language Models (LLMs) were evaluated against the application's functional requirements, including response quality, reasoning capability, latency, cost, structured JSON generation, and prompt adherence.
+
+For this project, **Amazon Nova 2 Lite** was selected because it provides an excellent balance between performance, cost, response speed, and structured output reliability while integrating seamlessly with AWS Bedrock.
+
+---
+
+# 📊 Foundation Model Comparison
+
+| Provider    | Best Models                  | Speed | Reasoning | Emotional Intelligence | Coding | Long Context |  Cost  | Latency | Multimodal | Max Context     | Best Use Cases                            |
+| ----------- | ---------------------------- | :---: | :-------: | :--------------------: | :----: | :----------: | :----: | :-----: | :--------: | --------------- | ----------------------------------------- |
+| Amazon      | Nova 2 Lite, Nova Pro        | ⭐⭐⭐⭐⭐ |   ⭐⭐⭐⭐☆   |          ⭐⭐⭐⭐☆         |  ⭐⭐⭐⭐☆ |     ⭐⭐⭐⭐⭐    |   💲   |  ⭐⭐⭐⭐⭐  |      ✅     | Up to 1M tokens | AI assistants, newsletters, wellness apps |
+| Anthropic   | Claude 3 Haiku, Sonnet, Opus | ⭐⭐⭐⭐☆ |   ⭐⭐⭐⭐⭐   |          ⭐⭐⭐⭐⭐         |  ⭐⭐⭐⭐⭐ |     ⭐⭐⭐⭐⭐    | 💲💲💲 |  ⭐⭐⭐⭐☆  |      ✅     | 200K+           | Emotional reasoning, summarization        |
+| DeepSeek    | DeepSeek R1, V3              | ⭐⭐⭐⭐☆ |   ⭐⭐⭐⭐⭐   |          ⭐⭐⭐☆☆         |  ⭐⭐⭐⭐⭐ |     ⭐⭐⭐⭐☆    |   💲   |  ⭐⭐⭐⭐☆  |    Text    | 128K            | Programming and debugging                 |
+| Google      | Gemini 2.5 Flash, Pro        | ⭐⭐⭐⭐⭐ |   ⭐⭐⭐⭐⭐   |          ⭐⭐⭐⭐☆         |  ⭐⭐⭐⭐☆ |     ⭐⭐⭐⭐⭐    |  💲💲  |  ⭐⭐⭐⭐⭐  |      ✅     | Up to 1M        | Multimodal AI                             |
+| Meta        | Llama 3.x                    | ⭐⭐⭐⭐☆ |   ⭐⭐⭐⭐☆   |          ⭐⭐⭐⭐☆         |  ⭐⭐⭐⭐☆ |     ⭐⭐⭐⭐☆    |   💲   |  ⭐⭐⭐⭐☆  |   Partial  | 128K            | General assistants                        |
+| Mistral     | Mistral Large, Small         | ⭐⭐⭐⭐⭐ |   ⭐⭐⭐⭐☆   |          ⭐⭐⭐⭐☆         |  ⭐⭐⭐⭐☆ |     ⭐⭐⭐⭐☆    |   💲   |  ⭐⭐⭐⭐⭐  |    Text    | 128K            | Fast RAG systems                          |
+| MiniMax     | MiniMax Text                 | ⭐⭐⭐⭐☆ |   ⭐⭐⭐⭐☆   |          ⭐⭐⭐⭐☆         |  ⭐⭐⭐☆☆ |     ⭐⭐⭐⭐☆    |   💲   |  ⭐⭐⭐⭐☆  |    Text    | Varies          | Conversational AI                         |
+| Moonshot AI | Kimi                         | ⭐⭐⭐⭐☆ |   ⭐⭐⭐⭐⭐   |          ⭐⭐⭐⭐☆         |  ⭐⭐⭐⭐☆ |     ⭐⭐⭐⭐⭐    |  💲💲  |  ⭐⭐⭐⭐☆  |    Text    | Very Long       | Long document understanding               |
+| NVIDIA      | Nemotron                     | ⭐⭐⭐⭐☆ |   ⭐⭐⭐⭐☆   |          ⭐⭐⭐☆☆         |  ⭐⭐⭐⭐⭐ |     ⭐⭐⭐⭐☆    |  💲💲  |  ⭐⭐⭐⭐☆  |      ✅     | Varies          | Enterprise AI                             |
+
+---
+
+# ⚖ Parameter Comparison
+
+| Parameter                | Amazon Nova | Claude | DeepSeek | Gemini | Llama |
+| ------------------------ | :---------: | :----: | :------: | :----: | :---: |
+| Cost                     |    ⭐⭐⭐⭐⭐    |   ⭐⭐⭐  |   ⭐⭐⭐⭐⭐  |  ⭐⭐⭐⭐  |  ⭐⭐⭐⭐ |
+| Speed                    |    ⭐⭐⭐⭐⭐    |  ⭐⭐⭐⭐  |   ⭐⭐⭐⭐   |  ⭐⭐⭐⭐⭐ |  ⭐⭐⭐⭐ |
+| Response Quality         |     ⭐⭐⭐⭐    |  ⭐⭐⭐⭐⭐ |   ⭐⭐⭐⭐   |  ⭐⭐⭐⭐⭐ |  ⭐⭐⭐⭐ |
+| Creativity               |     ⭐⭐⭐⭐    |  ⭐⭐⭐⭐⭐ |    ⭐⭐⭐   |  ⭐⭐⭐⭐⭐ |  ⭐⭐⭐⭐ |
+| Emotional Support        |     ⭐⭐⭐⭐    |  ⭐⭐⭐⭐⭐ |    ⭐⭐⭐   |  ⭐⭐⭐⭐  |  ⭐⭐⭐⭐ |
+| Newsletter Writing       |    ⭐⭐⭐⭐⭐    |  ⭐⭐⭐⭐⭐ |    ⭐⭐⭐   |  ⭐⭐⭐⭐  |  ⭐⭐⭐⭐ |
+| YouTube Query Generation |    ⭐⭐⭐⭐⭐    |  ⭐⭐⭐⭐⭐ |   ⭐⭐⭐⭐   |  ⭐⭐⭐⭐  |  ⭐⭐⭐⭐ |
+| JSON Output Reliability  |    ⭐⭐⭐⭐⭐    |  ⭐⭐⭐⭐⭐ |   ⭐⭐⭐⭐   |  ⭐⭐⭐⭐⭐ |  ⭐⭐⭐⭐ |
+| Prompt Following         |    ⭐⭐⭐⭐⭐    |  ⭐⭐⭐⭐⭐ |   ⭐⭐⭐⭐   |  ⭐⭐⭐⭐⭐ |  ⭐⭐⭐⭐ |
+
+---
+
+# 🧠 Model Selection for MindMate Features
+
+| Feature                         | Selected Model     | Reason                               |
+| ------------------------------- | ------------------ | ------------------------------------ |
+| AI Chat                         | Amazon Nova 2 Lite | Low latency and cost-effective       |
+| Motivation Newsletter           | Amazon Nova 2 Lite | High-quality structured writing      |
+| Daily Quotes                    | Amazon Nova 2 Lite | Fast response with consistent output |
+| YouTube Search Query Generation | Amazon Nova 2 Lite | Reliable JSON generation             |
+| Journal Analysis *(Future)*     | Claude Sonnet      | Strong emotional reasoning           |
+| Mood Detection *(Future)*       | Claude Sonnet      | Better contextual understanding      |
+| Wellness Suggestions            | Amazon Nova 2 Lite | Balanced quality and speed           |
+| Weekly Report *(Future)*        | Claude Sonnet      | Superior summarization               |
+
+---
+
+# 🏆 Decision Matrix
+
+| Requirement                  | Recommended Model                    |
+| ---------------------------- | ------------------------------------ |
+| Lowest Cost                  | 🥇 Amazon Nova 2 Lite                |
+| Fastest Response             | 🥇 Amazon Nova 2 Lite / Gemini Flash |
+| Best Emotional Conversations | 🥇 Claude Sonnet                     |
+| Best Coding Assistance       | 🥇 DeepSeek                          |
+| Best Long Context            | 🥇 Gemini / Moonshot Kimi            |
+| Best Overall for MindMate    | 🥇 Amazon Nova 2 Lite                |
+
+---
+
+# 🎯 Why Amazon Nova 2 Lite Was Selected
+
+The objective of this project was to demonstrate practical AWS Generative AI development while maintaining low operational cost and fast response times.
+
+Amazon Nova 2 Lite was selected because it offers:
+
+* Native integration with Amazon Bedrock
+* Excellent cost-to-performance ratio
+* Low latency suitable for interactive applications
+* Strong prompt-following capability
+* Reliable structured JSON generation
+* Long context support
+* Production-ready scalability within the AWS ecosystem
+
+Although other models outperform Nova in specialized areas such as emotional reasoning (Claude) or programming (DeepSeek), Nova provides the best overall balance for this application's architecture and aligns directly with the project's goal of showcasing AWS AI capabilities.
 
 # 🏗 System Architecture
 
