@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MindMate</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🧠 MindMate</h1>
+
+    <p class="subtitle">
+        AI Powered Mental Wellness Assistant
+    </p>
+
+    <div class="card">
+
+        <label>Name</label>
+
+        <input
+            id="name"
+            type="text"
+            placeholder="Enter your name">
+
+        <label>Current Mood</label>
+
+        <select id="mood">
+
+            <option>Happy</option>
+            <option>Sad</option>
+            <option>Stress</option>
+            <option>Anxious</option>
+            <option>Motivated</option>
+            <option>Confused</option>
+            <option>Excited</option>
+
+        </select>
+
+        <label>Goal</label>
+
+        <input
+            id="goal"
+            type="text"
+            placeholder="Become DevOps Engineer">
+
+        <label>Interest</label>
+
+        <input
+            id="interest"
+            type="text"
+            placeholder="AWS, Docker, Kubernetes">
+
+        <button id="generateBtn">
+
+            🚀 Generate Newsletter
+
+        </button>
+
+    </div>
+
+    <div class="newsletter-card">
+
+        <h2>AI Newsletter</h2>
+
+        <div class="section">
+            <h3>👋 Greeting</h3>
+            <p id="greeting">-</p>
+        </div>
+
+        <div class="section">
+            <h3>💡 Motivation</h3>
+            <p id="motivation">-</p>
+        </div>
+
+        <div class="section">
+            <h3>📚 Productivity Tip</h3>
+            <p id="productivity_tip">-</p>
+        </div>
+
+        <div class="section">
+            <h3>❤️ Wellness Tip</h3>
+            <p id="wellness_tip">-</p>
+        </div>
+
+        <div class="section">
+            <h3>🌟 Quote</h3>
+            <blockquote id="quote">-</blockquote>
+        </div>
+
+        <div class="section">
+            <h3>🎯 Closing Message</h3>
+            <p id="closing">-</p>
+        </div>
+
+    </div>
+
+</div>
+<div class="newsletter-card">
+
+    <h2>📺 Recommended Videos</h2>
+
+    <div id="videos">
+
+        No videos yet.
+
+    </div>
+
+</div>
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+
+</body>
+
+</html>
