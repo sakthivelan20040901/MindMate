@@ -4,6 +4,7 @@
 
 MindMate is an intelligent web application that provides personalized motivational newsletters and recommends educational and wellness videos based on a user's mood, goals, and interests.
 
+YouTube Link for Demo:https://www.youtube.com/watch?v=-k9Y9XO5G2U
 ---
 
 # 🌟 Features
